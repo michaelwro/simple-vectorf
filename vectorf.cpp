@@ -96,6 +96,19 @@ float Vectorf::GetNorm() {
 
 
 /**
+ * Print the vector's elements to stdout.
+ */
+void Vectorf::Print() {
+    size_t i;
+
+    std::cout << "[ ";  // Left bracket
+    for (i = 0; i < this->n; i++)
+        std::cout << this->vec[i] << " ";  // space between elements
+    std::cout << " ]" << std::endl;  // right bracket
+}
+
+
+/**
  * Deconstructor for vectorf object.
  */
 Vectorf::~Vectorf() {
