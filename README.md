@@ -8,7 +8,7 @@
 
 **Blog:** [mwrona.com](https://mwrona.com/)
 
-A blog post thoroughly explaining how to use this class can be found at: [LINK HERE].
+A blog post thoroughly explaining how to use this class can be found at [this link](https://mwrona.com/posts/cpp-vector-obj/).
 
 The vector class is for `float` data, but could be easily modified for other data types.
 

@@ -26,7 +26,7 @@ Vectorf::Vectorf(size_t vecLen) {
         this->vec = new float[this->n];  // Allocate array on the heap
     }
     catch (const std::bad_alloc &ba) {
-        std::cerr << "Bad vectorf allocation: " << ba.what() << std::endl;
+        std::cerr << "Bad vectorf array allocation: " << ba.what() << std::endl;
     }
 
     // Set initial values to zero
