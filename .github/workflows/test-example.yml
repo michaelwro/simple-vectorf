@@ -23,7 +23,10 @@ jobs:
           sudo apt update
           sudo apt install -y gcc g++ clang-12 --install-suggests
 
-      - name: Run example code
+      - name: Compile code
         run: |
           cd examples/
-          make run
+          make
+      
+      - name: Run code
+        run: ./maintest
