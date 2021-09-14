@@ -1,0 +1,27 @@
+name: Test Compile Example Code
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  compile-and-run:
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'ci skip')"
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install compilers
+        run: |
+        sudo apt update
+        sudo apt install -y gcc g++ clang-12 --install-suggests
+
+      - name: Run example code
+        run: make run
