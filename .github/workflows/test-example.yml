@@ -20,8 +20,8 @@ jobs:
 
       - name: Install compilers
         run: |
-        sudo apt update
-        sudo apt install -y gcc g++ clang-12 --install-suggests
+          sudo apt update
+          sudo apt install -y gcc g++ clang-12 --install-suggests
 
       - name: Run example code
         run: make run
