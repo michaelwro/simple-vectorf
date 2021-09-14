@@ -11,6 +11,7 @@
 #include <iostream>
 #include <stdexcept>
 #include <string>
+#include <cmath>
 
 
 class Vectorf {
@@ -20,6 +21,7 @@ class Vectorf {
         void Fill(float val);
         size_t GetLen();
         float Get(size_t index);
+        float GetNorm();
     protected:
     private:
         size_t n; ///< Vector length

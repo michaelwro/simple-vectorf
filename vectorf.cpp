@@ -78,6 +78,24 @@ void Vectorf::Fill(float val) {
 
 
 /**
+ * Return the magnitude/norm of the vector.
+ * 
+ * @returns Vector magnitude (2-norm).
+ */
+float Vectorf::GetNorm() {
+    size_t i;
+    float sum = 0.0f;
+
+    // Sum of the squares
+    for (i = 0; i < this->n; i++)
+        sum += this->vec[i] * this->vec[i];
+
+    // return the square root
+    return sqrtf(sum);
+}
+
+
+/**
  * Deconstructor for vectorf object.
  */
 Vectorf::~Vectorf() {
