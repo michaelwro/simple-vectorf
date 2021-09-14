@@ -6,7 +6,7 @@
 
 CC=g++
 CFLAGS=-Wall -std=c++11
-OUTNAME=maintest
+OUTNAME=vectortest.out
 
 all:
 	$(CC) -o $(OUTNAME) main.cpp ../vectorf.cpp -I../ $(CFLAGS)

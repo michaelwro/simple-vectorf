@@ -27,4 +27,4 @@ jobs:
         run: |
           cd examples/
           make
-          ./maintest
+          ./vectortest.out
