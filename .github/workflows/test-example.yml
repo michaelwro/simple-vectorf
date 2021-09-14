@@ -29,4 +29,6 @@ jobs:
           make
       
       - name: Run code
-        run: ./maintest
+        run: |
+          chmod +x maintest
+          ./maintest
