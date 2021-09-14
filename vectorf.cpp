@@ -104,7 +104,7 @@ void Vectorf::Print() {
     std::cout << "[ ";  // Left bracket
     for (i = 0; i < this->n; i++)
         std::cout << this->vec[i] << " ";  // space between elements
-    std::cout << " ]" << std::endl;  // right bracket
+    std::cout << "]" << std::endl;  // right bracket
 }
 
 
